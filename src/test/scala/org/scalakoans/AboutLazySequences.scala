@@ -9,7 +9,7 @@ class AboutLazySequences extends KoanSuite  {
   koan("Lazy collections can be created from strict collections") {
     val strictList = List(10, 20, 30)
     val lazyList = strictList.view
-    lazyList.head should be(__)
+    lazyList.head should be(10)
   }
 
   koan("Strict collection always processes it elements but lazy collection does on demand") {
