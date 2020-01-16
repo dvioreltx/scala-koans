@@ -6,7 +6,7 @@ import support.BlankValues.__
 class AboutTypeSignatures extends KoanSuite  {
   koan("In Java you declare a generic type within a <>, in Scala it is []") {
     val z: List[String] = "Do" :: "Re" :: "Mi" :: "Fa" :: "So" :: "La" :: "Te" :: "Do" :: Nil
-    z(3) should be(__)
+    z(3) should be("Fa")
   }
 
   koan("Most of the time, Scala will infer the type and [] are optional") {
